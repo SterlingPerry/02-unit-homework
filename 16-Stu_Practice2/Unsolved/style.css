@@ -1,0 +1,54 @@
+body{
+    background-color: #444444;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr; 
+}
+
+h2{
+    font-family: 'Sonsie One', cursive;
+    font-size: 24px;
+    color: #e4e4e4
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-row: span 1;
+    grid-column: span 1; 
+}
+
+header{
+    grid-row: span 1;
+    grid-column: span 6;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.img{
+    border-radius: 25px;
+
+}
+
+.box{
+    display: grid;
+}
+
+
+.one {
+    grid-row: span 1;
+    grid-column: span 6;
+    justify-content: center;
+    align-items: center; 
+       
+}
+
+.two, .three, .four, .five, .six,  .seven, .eight, .nine  {
+    grid-row: span 1;
+    grid-column: span 1;   
+}
+

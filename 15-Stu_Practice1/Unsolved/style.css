@@ -1,0 +1,103 @@
+body{
+    background-color: #333333;
+     
+}
+
+header{
+    margin-top: 30px;
+    padding-left: 50px;
+
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+    color: #e4e4e4;
+    font-weight: bold;
+}
+h2{
+    font-family: 'Sonsie One', cursive;
+    font-size: 24px;
+    color: #e4e4e4
+}
+
+h3{
+    font-family: 'EB Garamond', serif;
+    font-size: 24px;
+    color: #222;
+    padding-left: 20px;
+    padding-bottom: 30px;
+
+}
+
+main{
+    height:100px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(8, 1fr);
+    margin:20px;
+   /* grid-gap: 10px;*/
+    
+}
+div{
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 1;
+    padding-top: 35px;
+    /*width: 600px; */
+    background-color: white;
+    justify-content: center;
+    align-content: center; 
+    
+}
+
+.img{
+    height: 400px;
+    width: 600px;
+}
+
+/*.box{
+  height: 100%;
+  background-color: #666;
+  background-blend-mode: multiply;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+}
+
+*/
+
+
+@media only screen and (min-width: 600px){
+
+    main{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: repeat(2, 1fr);
+        
+        /*margin: 50px 50px 50px 50px;*/
+        /*padding: 20% 20% 20% 20%;*/
+        
+       
+    }
+
+    div{
+        display:grid;
+        grid-row: span 1;
+        grid-column: span 1;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        
+        
+    }
+
+    h3{
+        font-family: 'EB Garamond', serif;
+        font-size: 24px;
+        color: #222;
+        padding-left: 20px;
+        padding-bottom: 30px;
+    }
+
+}
